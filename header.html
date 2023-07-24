@@ -1,0 +1,40 @@
+<style>
+    /* Add CSS styles for the sticky header */
+    body {
+      padding-top: 70px; /* Adjust this value to add space for the sticky header */
+    }
+  
+    .sticky-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
+<header class="navbar navbar-expand-lg navbar-light bg-light non-hompage firstHeader sticky-top">
+    <div class="container navbar-container">
+      <a class="navbar-brand" href="../">
+        <div class="row">
+          <div class="col-4">
+            <img class="img-logo" height="50" src="../source/Lambang_Kabupaten_Bulukumba.svg" alt="Logo">
+          </div>
+          <div class="col-8 wrap-nama-desa">
+            <p class="namaDesa">Desa Manjalling</p>
+            <p class="kabDesa">Kabupaten Bulukumba</p>
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2"><span class="navbar-toggler-icon"></span></button>
+      <nav class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "><a class="nav-link" href="../pemerintah/">Pemerintah</a></li>
+          <li class="nav-item "><a class="nav-link" href="../infografis/">Infografis</a></li>
+          <!-- <li class="nav-item "><a class="nav-link" href="../idm">IDM</a></li> -->
+          <!-- <li class="nav-item "><a class="nav-link" href="../belanja">Belanja</a></li> -->
+          <li class="nav-item "><a class="nav-link" href="../berita/">Berita</a></li>
+          <!-- <li class="nav-item "><a class="nav-link" href="../ppid">PPID</a></li> -->
+          <li class="nav-item menu-item-active"><a href="../layanan-warga/"><button class="btn btn-success btn-layanan"> Layanan Warga </button></a></li>
+        </ul>
+      </nav>
+    </div>
+</header>

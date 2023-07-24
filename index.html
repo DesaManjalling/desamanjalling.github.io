@@ -32,8 +32,8 @@
           'system_app': `webprofile-origin`,
           'kode_wilayah': `72.10.12.2006`,
           'deskel': `Manjalling`,
-          'kecamatan': `Dolo`,
-          'kabkota': `Sigi`,
+          'kecamatan': `Ujung Loe`,
+          'kabkota': `Bulukumba`,
           'provinsi': `Sulawesi Selatan`,
         });
       }
@@ -42,49 +42,8 @@
       });
     </script>
     <script src="./source/bundle.tracing.min.js.download" integrity="sha384-XrtsNPpOZ+ul39uZL5FBdv8ByR9EAoDxyx2pnT9+txkfvq1oqUSD6jWO+Qjj67LD" crossorigin="anonymous"></script>
-    <script>
-      Sentry.init({
-        dsn: "https://9627bbc6984544b7847822b8e8b9762e@o310487.ingest.sentry.io/1784747"
-      });
-      Sentry.setTag("system.app", "webprofile-origin");
-      Sentry.setUser({
-        id: `-`,
-        username: ``,
-        email: ``,
-        fullname: ``,
-        position: ``,
-        deskel: `Manjalling`,
-        kecamatan: `Ujungloe`,
-        kabkota: `Bulukumba`,
-        provinsi: `Sulawesi Selatan`,
-      });
-    </script>
     <title>Website Profil Desa Manjalling</title>
     <base href=".">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website Profil Desa Manjalling Kecamatan Ujungloe Kabupaten Bulukumba Provinsi Sulawesi Selatan">
-    <meta name="keywords" content="digitaldesa,digides,sistem informasi desa,sid,webprofil desa,webprofil,website profil desa Manjalling">
-    <meta name="author" content="digitaldesa">
-    <meta name="robots" content="index, follow">
-    <meta name="HandheldFriendly" content="true">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="Website Profil Desa Manjalling">
-    <meta property="og:description" content="Website Profil Desa Manjalling Kecamatan Ujungloe Kabupaten Bulukumba Provinsi Sulawesi Selatan">
-    <meta property="og:url" content="..">
-    <meta property="og:site_name" content="Website Profil Desa Manjalling">
-    <meta property="og:image" content="https://online.digitaldesa.id/uploads/72.10.12.2006/common/Lambang_Kabupaten_Bulukumba.svg">
-    <meta property="og:image:secure_url" content="https://online.digitaldesa.id/uploads/72.10.12.2006/common/Lambang_Kabupaten_Bulukumba.svg">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="200">
-    <meta property="og:image:alt" content="Website Profil Desa Manjalling">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Website Profil Desa Manjalling Kecamatan Ujungloe Kabupaten Bulukumba Provinsi Sulawesi Selatan">
-    <meta name="twitter:title" content="Website Profil Desa Manjalling">
-    <meta name="twitter:site" content="@digitaldesa">
-    <meta name="twitter:image" content="https://online.digitaldesa.id/uploads/72.10.12.2006/common/Lambang_Kabupaten_Bulukumba.svg">
-    <meta name="twitter:creator" content="@digitaldesa">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="canonical" href="..">
     <link rel="alternate" hreflang="x-default" href="..">
     <link rel="alternate" hreflang="id" href="..">
@@ -125,34 +84,16 @@
     <link rel="stylesheet" href="./style/wticons.css">
   </head>
   <body>
-    <!-- begin::Navbar -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light non-hompage firstHeader sticky-top">
-      <div class="container navbar-container">
-        <a class="navbar-brand" href="../">
-          <div class="row">
-            <div class="col-4">
-              <img class="img-logo" height="50" src="./source/Lambang_Kabupaten_Bulukumba.svg" alt="Logo">
-            </div>
-            <div class="col-8 wrap-nama-desa">
-              <p class="namaDesa">Desa Manjalling</p>
-              <p class="kabDesa">Kabupaten Bulukumba</p>
-            </div>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2"><span class="navbar-toggler-icon"></span></button>
-        <nav class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a class="nav-link" href="../pemerintah">Pemerintah</a></li>
-            <li class="nav-item "><a class="nav-link" href="../infografis">Infografis</a></li>
-            <!-- <li class="nav-item "><a class="nav-link" href="../idm">IDM</a></li> -->
-            <!-- <li class="nav-item "><a class="nav-link" href="../belanja">Belanja</a></li> -->
-            <li class="nav-item "><a class="nav-link" href="../berita">Berita</a></li>
-            <!-- <li class="nav-item "><a class="nav-link" href="../ppid">PPID</a></li> -->
-            <li class="nav-item menu-item-active"><a href="../layanan-warga"><button class="btn btn-success btn-layanan"> Layanan Warga </button></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+
+    <div id="header"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(content => {
+          document.getElementById('header').innerHTML = content;
+        });
+    </script>
+
     <header class="d-lg-none welcome-mobile-section rel-container" style="min-height: 195px;">
       <div id="backgroundImg" class="background-image-div d-lg-none"></div>
       <div class="row">
@@ -186,9 +127,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-12 text-center mt-4"><a href="../pengelolaan-dana" class="btn btn-success roundedButton">
-                      Selengkapnya
-                  </a></div> -->
       </div>
     </header>
     <header style="background: url(&#39;https://www.kemenkeu.go.id/media/14487/ilustrasi-pedesaan.jpg&#39;);background-size: cover" id="backgroundImg" class="background-image-div d-none d-lg-block"></header>
@@ -207,7 +145,7 @@
         </div>
       </div>
       <div class="row fokus-pengembangan tampilan-desktop">
-        <img class="img-kepalaDesa" src="./source/no_image.png" alt="Foto Sambutan" style="position: fixed; top: 130px; opacity: 1;">
+        <img class="img-kepalaDesa" src="./source/puddle.png" alt="Foto Sambutan" style="position: fixed; top: 130px; opacity: 1;">
         <div class="col-md-8">
           <div class="row">
             <div class="col-9 mb-3 text-center">
@@ -244,18 +182,12 @@
       <article id="wrapSambutan" class="d-none d-lg-block">
         <div class="row ket-kepala-desa rel-container">
           <div class="col-7 col-ket-kepala-desa">
-            <h2 class="nama-Kepala-Desa" id="namaKepalaDesa">[Nama Lengkap]</h2>
-            <p class="jabatan" id="jabatan">[Jabatan]</p>
-            <div class="show-more" style="text-align: justify;">[Isi sambutan]</div>
-            <a target="_blank" href="https://wa.me/62" class="btn btn-success btn-form-kerjasama mt-4"> Form Kerjasama dan Investasi Desa </a>
+            <h2 class="nama-Kepala-Desa" id="namaKepalaDesa">Puddle Si Putih</h2>
+            <p class="jabatan" id="jabatan">Jabatan : Kucing</p>
+            <div class="show-more" style="text-align: justify;">Mewo ^v^</div>
+            <!-- <a target="_blank" href="https://wa.me/62" class="btn btn-success btn-form-kerjasama mt-4"> Form Kerjasama dan Investasi Desa </a> -->
           </div>
         </div>
-      </article>
-      <article class="py-2 px-3 text-center d-block d-lg-none">
-        <img src="./source/no_image.png" width="80%" style="text-align: center;" class="mb-3">
-        <h2 class="nama-Kepala-Desa" id="namaKepalaDesa">[Nama Lengkap]</h2>
-        <p class="jabatan" id="jabatan">[Jabatan]</p>
-        <p class="show-more" style="text-align: justify;">[Isi sambutan]</p>
       </article>
       <article id="wrapInfoArea">
         <section>
@@ -267,17 +199,17 @@
                   <h2 style="font-weight: 700; font-size: 1.5rem; color: white; margin-left: 10px;"> Area </h2>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0m <sup>2</sup>
+                  <p class="jumlahKeterangan"> - m <sup>2</sup>
                   </p>
                   <p class="textKeterangan">Luas Tanah Kas Desa</p>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0m <sup>2</sup>
+                  <p class="jumlahKeterangan">7130 m <sup>2</sup>
                   </p>
                   <p class="textKeterangan">Luas Tanah di Desa</p>
                 </div>
                 <div class="col-12 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0m <sup>2</sup>
+                  <p class="jumlahKeterangan"> - m <sup>2</sup>
                   </p>
                   <p class="textKeterangan">Luas DHKP</p>
                 </div>
@@ -294,15 +226,15 @@
                   <h2 style="font-weight: 700; font-size: 1.5rem;color: white;margin-left: 10px;"> Populasi </h2>
                 </div>
                 <div class="col-4 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0</p>
+                  <p class="jumlahKeterangan">3.284</p>
                   <p class="textKeterangan">Penduduk</p>
                 </div>
                 <div class="col-4 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0</p>
+                  <p class="jumlahKeterangan">1.661</p>
                   <p class="textKeterangan">Laki-Laki</p>
                 </div>
                 <div class="col-4 col-md-4 col-xl-3 text-center">
-                  <p class="jumlahKeterangan">0</p>
+                  <p class="jumlahKeterangan">1.623</p>
                   <p class="textKeterangan">Perempuan</p>
                 </div>
               </div>
@@ -337,7 +269,27 @@
         <img class="bg-kabar-desa-1" src="./source/bgKabarDesa1.svg" width="550">
         <img class="bg-kabar-desa-2" src="./source/bgKabarDesa2.svg" width="650">
       </article>
-      <article class="container mt-5">
+      
+      <article class="beliDariDesa rel-container">
+        <div class="container mt-5">
+          <section id="beliDariDesa">
+            <div class="row ">
+              <div class="col-12 mb-4 text-center">
+                <h2 class="judul-section">Wisata Desa Kami</h2>
+              </div>
+              <div class="col-12 text-center">
+                <div class="autoplay slick-initialized slick-slider">
+                  <div class="slick-list draggable">
+                    <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- <article class="container mt-5">
         <section id="wisataDesaKami">
           <div class="row ">
             <div class="col-12 mb-4 text-center">
@@ -352,102 +304,20 @@
             </div>
           </div>
         </section>
-      </article>
+      </article> -->
+
     </main>
-    <div class="d-none col-md-12 text-center powered-by wrap-footer fw-bold">
-      <div class="row">
-        <div class="col-md-3">• Hari Ini: <span id="visitorToday">4</span>
-        </div>
-        <div class="col-md-3">• Kemarin: 12</div>
-        <div class="col-md-3">• Bulan Ini: 50</div>
-        <div class="col-md-3">• Semua: 1459</div>
-      </div>
-    </div>
-    <footer class="">
-      <div class="above-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 center-mobile">
-              <div class="row">
-                <div class="col-12 col-md-2 mb-3">
-                  <img id="logoDigides" src="./source/Logo-Resmi-Unhas-1.png" alt="Logo Unhas" height="50">
-                </div>
-                <div class="col-12 col-md-2 mt-2 mb-3">
-                  <img id="logoIconPlus" src="./source/logo-icon+.png" alt="Logo ICON+" height="40">
-                </div>
-                <div class="col-12 col-md-8">
-                  <div class="row justify-content-center">
-                    <div class="col-2 col-md-4">
-                      <img id="logoKabupaten" src="./source/Lambang_Kabupaten_Bulukumba.svg" alt="Logo" height="50">
-                    </div>
-                    <div class="col-4 col-md-8 wrap-nama-desa-footer">
-                      <p class="namaDesa">Desa Manjalling</p>
-                      <p class="kabDesa">Kabupaten Bulukumba</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 mt-3 mb-3">
-                  <h5 style="color: white;font-weight: 700">Media Sosial</h5>
-                  <div class="row mt-2 px-5 px-md-1 wrap-sosial-media"></div>
-                </div>
-              </div>
-            </div>
-            <div class="d-none col-md-2">
-              <div class="boxCounter row border rounded bg-white">
-                <div class="col-12 border text-center fw-bold bg-success bg-gradient p-2 text-white">Statistik Pengunjung</div>
-                <div class="col-7 border-start border-top border-bottom">Hari ini</div>
-                <div id="todayVisitor" class="col-5 border-end border-top border-bottom">0</div>
-                <div class="col-7 border-start border-top border-bottom">Kemarin</div>
-                <div id="yesterdayVisitor" class="col-5 border-end border-top border-bottom">0</div>
-                <div class="col-7 border-start border-top border-bottom">Semua</div>
-                <div id="totalVisitor" class="col-5 border-end border-top border-bottom website-counter">0</div>
-              </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <h5 style="color: white;font-weight: 700">Alamat Kantor</h5>
-              <address>
-                <p class="footer-text text-center"> [Alamat kantor] <br> Desa Manjalling <br> Kecamatan Ujungloe <br> Kabupaten Bulukumba <br> Provinsi Sulawesi Selatan, 92661 </p>
-              </address>
-            </div>
-            <div class="col-md-4 text-center">
-              <h5 style="color: white;font-weight: 700">No. Telepon Penting</h5>
-              <div class="no-tlp-penting"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 text-center powered-by wrap-footer fw-bold mt-5">
-          <div class="row">
-            <div class="col-md-3">• Hari Ini: <span id="visitorToday">xx</span>
-            </div>
-            <div class="col-md-3">• Kemarin: xx</div>
-            <div class="col-md-3">• Bulan Ini: xx</div>
-            <div class="col-md-3">• Semua: xx</div>
-          </div>
-        </div>
-      </div>
-      <div class="below-footer">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div class="row text-center">
-                <div class="col-md-4 footer-kontak">
-                  <a class="below-text" style="color:white" href="https://wa.me/62">
-                    <i class="fa fa-phone-alt iconx"></i>[Nomor Telepon Kantor] </a>
-                </div>
-                <div class="col-md-4 footer-kontak" style="color: white;">
-                  <span class="below-text">
-                    <i class="fa fa-clock iconx"></i>[Jam Kerja Kantor] </span>
-                </div>
-                <div class="col-md-4 footer-kontak">
-                  <a class="below-text" style="color:white" href="mailto:emaildesa@email.id">
-                    <i class="fa fa-envelope iconx"></i>emaildesa@email.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+
+
+    <div id="footer"></div>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(content => {
+          document.getElementById('footer').innerHTML = content;
+        });
+    </script>
+
     <script src="./source/slick.min.js.download"></script>
     <script>
       $('.autoplay').slick({
